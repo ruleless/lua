@@ -1,0 +1,15 @@
+*.o
+*.ncb
+*.suo
+*.user
+main
+temp
+tmp
+cat
+core
+QueueTest
+GPATH
+GRTAGS
+GTAGS
+/build/Obj
+/build/debug
