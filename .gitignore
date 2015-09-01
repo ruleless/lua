@@ -13,3 +13,5 @@ GRTAGS
 GTAGS
 /build/Obj
 /build/debug
+/sample/Obj
+/sample/debug
