@@ -2,6 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "Sample.vcproj", "{E9AAE810-DD1B-462F-98B2-5371F683C2A0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81D906AC-6478-453A-A177-DAC52F9E0BE3} = {81D906AC-6478-453A-A177-DAC52F9E0BE3}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lua", "..\build\lua.vcproj", "{81D906AC-6478-453A-A177-DAC52F9E0BE3}"
 EndProject

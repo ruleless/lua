@@ -11,16 +11,6 @@ extern "C"
 
 #pragma comment(lib, "lua.lib")
 
-void * _lalloc(void *ud, void *ptr, size_t osize, size_t nsize) 
-{
-	if (nsize == 0) {
-		free(ptr);
-		return NULL;
-	} else {
-		return realloc(ptr, nsize);
-	}
-}
-
 int main(int argc, char *argv[])
 {
 	const char *luaFile = "sample.lua";
@@ -29,7 +19,7 @@ int main(int argc, char *argv[])
 		luaFile = argv[1];
 	}
 
-	lua_State *L = lua_newstate(_lalloc, NULL);
+	lua_State *L = luaL_newstate();
 	luaL_openlibs(L);
 
 	luaL_loadfile(L, luaFile);
